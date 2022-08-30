@@ -18,4 +18,4 @@
 
 ### 示例
 * java.util.Calendar、NumberFormat、ResourceBundle 的 getInstance() 方法使用了工厂模式。
-* Java 中的所有包装类，如 String、Integer、Boolean 等的 valueOf() 方法都使用这种模式来使用 评估值。
+* Java 中的所有包装类，如 String、Integer、Boolean 等的 valueOf() 方法都使用这种模式来转换类型。
