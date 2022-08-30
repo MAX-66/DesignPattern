@@ -5,6 +5,7 @@ package com.pattern.singleton;
  *  当 SingletonBillPugh 被加载时， 静态内部类 SingletonHelper 没有被加载进内存
  *  只有当调用 getInstance() 方法从而触发 SingletonHelper.INSTANCE 时 SingletonHelper 才会被加载，此时初始化 INSTANCE 实例， 并且 JVM 提供了对线程安全的支持
  *  这种方式不仅具有延迟初始化的好处， 而且由 JVM 提供了对线程安全的支持
+ *  JVM 在执行类的初始化阶段，会获得一个多个线程对同一个类的初始化的锁
  * </p>
  *
  * @since 2022/8/29
